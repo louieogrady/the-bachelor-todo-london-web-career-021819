@@ -36,7 +36,7 @@ def get_occupation(data, hometown)
     data.each do |season_num, cont_info|
       cont_info.each do |info|
         if hometown == info["hometown"]
-          info["occupation"]
+          return info["occupation"]
         end
       end 
     end 
