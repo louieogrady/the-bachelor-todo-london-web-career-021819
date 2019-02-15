@@ -55,13 +55,15 @@ def get_average_age_for_season(data, season)
 end
 
 def get_average_age_for_season(data, season)
-  array = []
+array = []
     data.each do |season_num, cont_info|
       cont_info.each do |a|
         if season == season_num
-          array << a[:age]
-        end 
-      end 
-    end
-array
+        array << a[:age]
+        end
+      end  
+    end 
+    array 
+    x = array.collect do |e| e.to_i end 
+y = x.inject{ |sum, el| sum + el }.to_i / x.size
 end 
