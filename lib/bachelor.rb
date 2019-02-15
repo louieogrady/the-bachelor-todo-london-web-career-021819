@@ -1,6 +1,8 @@
-def get_first_name_of_season_winner(data, season)
+require 'pry'
 
-if season == season 
+def get_first_name_of_season_winner(data, season)
+data.each[season_num, info]
+if info[:] == season 
   [:name]
 
 end
