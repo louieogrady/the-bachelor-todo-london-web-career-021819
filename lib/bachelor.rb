@@ -3,7 +3,7 @@ require 'pry'
 def get_first_name_of_season_winner(data, season)
 data.each do |season_num, cont_info|
   cont_info.each do |info, value|
-    if season == season_num && info[value]["status"] == "winner"
+    if season == season_num && value["status"] == "winner"
       return info["name"]
     end
   end 
