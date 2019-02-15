@@ -59,7 +59,7 @@ array = []
     data.each do |season_num, cont_info|
       cont_info.each do |a|
         if season_num == season
-        array << a[:age].to_f
+        array << a[:age]
         end
       end  
     end 
