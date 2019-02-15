@@ -2,9 +2,8 @@ require 'pry'
 
 def get_first_name_of_season_winner(data, season)
 data.each[season_num, info]
-if info[:] == season 
-  [:name]
-
+if season_num == season || info[:status] == "winner"
+  puts info[:name]
 end
 
 def get_contestant_name(data, occupation)
