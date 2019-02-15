@@ -4,7 +4,7 @@ def get_first_name_of_season_winner(data, season)
   data.each do |season_num, info|
     info.each do |cont_info|
       if season_num == season && cont_info["status"] == "winner"
-        puts data[:name]
+        puts cont_info["name"]
     end 
   end 
 end 
