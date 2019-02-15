@@ -60,6 +60,7 @@ def get_average_age_for_season(data, season)
       cont_info.each do |a|
         if season == season_num
           array << a[:age]
+        end 
       end 
     end
 array
