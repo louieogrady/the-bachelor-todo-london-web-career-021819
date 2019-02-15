@@ -60,6 +60,7 @@ array = []
       cont_info.collect do |a|
         if season_num == season
         array << a[:age]
+        binding.pry
         end
       end  
     end 
