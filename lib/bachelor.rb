@@ -2,9 +2,9 @@ require 'pry'
 
 def get_first_name_of_season_winner(data, season)
   data.each do |season_num, info|
-    binding.pry
   if season_num == season && info[:status] == "winner"
     puts data[:name]
+        binding.pry
     end 
   end 
 end 
