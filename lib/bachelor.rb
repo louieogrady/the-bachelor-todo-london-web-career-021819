@@ -63,6 +63,5 @@ array = []
         end
       end  
     end 
-    x = array.collect do |e| e.to_i end 
-    y = x.inject{ |sum, el| sum + el }.to_i / x.size
+array
 end 
